@@ -1,0 +1,109 @@
+
+// Support Resistance & Signal Expert Advisor
+// Developer: Forex Robot Easy Team
+// Developer's Site: forexroboteasy.com
+
+// Trade Management Functions
+void SetBuyingZones(double zone1, double zone2) {
+    // Code to set up to two buying zones
+}
+
+void SetSellingZones(double zone1, double zone2) {
+    // Code to set up to two selling zones
+}
+
+void AdjustLotSize(double lotSize) {
+    // Code to adjust lot size based on trade management settings
+}
+
+void AdjustStopLoss(double stopLoss) {
+    // Code to adjust stop loss based on trade management settings
+}
+
+void AdjustTakeProfit(double takeProfit) {
+    // Code to adjust take profit based on trade management settings
+}
+
+void PartialClosePosition(double percentage) {
+    // Code to partially close positions based on specified percentage
+}
+
+void SetStopLossAfterTakeProfit(bool enable) {
+    // Code to enable/disable setting stop loss after take profit
+}
+
+void SetSecondTakeProfit(double secondTP) {
+    // Code to set a second take profit level for additional trade optimization
+}
+
+// Trading Options Functions
+void OptionOneAutomated() {
+    // Code for automated execution of trades
+}
+
+void OptionTwoManual() {
+    // Code for manual execution of trades
+}
+
+void OptionThreeSemiAutomated() {
+    // Code for semi-automated execution of trades
+}
+
+// Trade Execution Functions
+void ExecuteBuyTrade(double price) {
+    // Code to execute a buy trade based on specified zones
+}
+
+void ExecuteSellTrade(double price) {
+    // Code to execute a sell trade based on specified zones
+}
+
+// Trade Calculation Functions
+double CalculateLotSize() {
+    // Code to calculate lot size based on trade management settings
+}
+
+void SetStopLossLevel(double price) {
+    // Code to set stop loss level based on trade management settings
+}
+
+void SetTakeProfitLevel(double price) {
+    // Code to set take profit level based on trade management settings
+}
+
+void PartiallyClosePosition(double percentage) {
+    // Code to partially close position based on specified percentage
+}
+
+void AdjustStopLossAfterTakeProfit() {
+    // Code to adjust stop loss level after take profit level is reached
+}
+
+void SetSecondTakeProfitLevel(double price) {
+    // Code to set a second take profit level for additional trade optimization
+}
+
+// Main Function
+void OnStart() {
+    // Code to be executed when the Expert Advisor is started
+    SetBuyingZones(1.1200, 1.1300);
+    SetSellingZones(1.1400, 1.1500);
+    AdjustLotSize(0.01);
+    AdjustStopLoss(50);
+    AdjustTakeProfit(100);
+    PartialClosePosition(50);
+    SetStopLossAfterTakeProfit(true);
+    SetSecondTakeProfit(150);
+    OptionOneAutomated();
+    OptionTwoManual();
+    OptionThreeSemiAutomated();
+    double currentPrice = 1.1250;
+    ExecuteBuyTrade(currentPrice);
+    ExecuteSellTrade(currentPrice);
+    CalculateLotSize();
+    SetStopLossLevel(currentPrice);
+    SetTakeProfitLevel(currentPrice);
+    PartiallyClosePosition(30);
+    AdjustStopLossAfterTakeProfit();
+    SetSecondTakeProfitLevel(currentPrice);
+}
